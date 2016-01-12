@@ -22,4 +22,8 @@ public class MathTest {
 		Assert.assertEquals(3, Math.ave(inputs), 0);
 	}
 	
+	@Test
+	public void aveEmpty() {
+		Assert.assertEquals(0, Math.ave(new int[]{}), 0);
+	}
 }
