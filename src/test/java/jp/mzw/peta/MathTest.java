@@ -26,4 +26,10 @@ public class MathTest {
 	public void aveEmpty() {
 		Assert.assertEquals(0, Math.ave(new int[]{}), 0);
 	}
+	
+	@Test
+	public void max() {
+		int[] inputs = {1, 2, 3, 4, 5};
+		Assert.assertEquals(5, Math.max(inputs));
+	}
 }

@@ -17,4 +17,13 @@ public class Math {
 		return ave;
 	}
 	
+	public static int max(int[] values) {
+		int max = Integer.MIN_VALUE;
+		for(int value : values) {
+			if(max < value)
+				max = value;
+		}
+		return max;
+	}
+	
 }
